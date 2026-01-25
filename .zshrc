@@ -1,1 +1,31 @@
-#Hola 2
+. "$HOME/.cargo/env"
+
+alias ls='eza --group-directories-first --icons -lhg'
+alias cp='cp --verbose'
+alias eject='eject --verbose'
+alias neofetch='fastfetch'
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\]<\W>\[\033[33m\]$(parse_git_branch)\[\033[01;31m\]\$ \[\033[37m\]'
+. "$HOME/.cargo/env"
+
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export HSA_OVERRIDE_GFX_VERSION=10.3.0
+export HSA_ENABLE_SDMA=0
+export ROCM_ENABLE_LOGGING=1
+export AMD_SERIALIZE_KERNEL=3
+export C_INCLUDE_PATH="$C_INCLUDE_PATH:/usr/include/python3.14:/home/cubos/.local/lib/python3.14/site-packages/numpy/_core/include"
+export THESIS_PATH="/home/cubos/Cubos2.0/Proyectos/RUSpectroscopy_Tools"
+export MOOC_PATH="/home/cubos/.local/share/tmc/tmc_cli_rust/"
+export LEARNING_C_PATH="/home/cubos/Cubos2.0/C_open_edg/Aprendiendo_C"
+export KERAS_BACKEND="torch"
+export WORK_PATH="/home/cubos/Documents/Uisr/"
+alias tmc='$MOOC_PATH/tmc-cli-rust-x86_64-unknown-linux-gnu-v1.1.2'
+export TMC_LANGS_CONFIG_DIR='/home/cubos/tmc-config'
+echo -ne "\e[6 q"
+#source /home/cubos/.local/share/tmc-autocomplete/tmc.bash
+eval "$(starship init zsh)"
