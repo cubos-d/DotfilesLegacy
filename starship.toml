@@ -146,12 +146,12 @@ disabled = true
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:green)'
-error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:blue)'
-vimcmd_replace_one_symbol = '[](bold fg:lavender)'
-vimcmd_replace_symbol = '[](bold fg:lavender)'
-vimcmd_visual_symbol = '[](bold fg:yellow)'
+success_symbol = '[󰽧](bold fg:green)'
+error_symbol = '[󰽧](bold fg:red)'
+vimcmd_symbol = '[󰽥](bold fg:blue)'
+vimcmd_replace_one_symbol = '[󰽥](bold fg:lavender)'
+vimcmd_replace_symbol = '[󰽥](bold fg:lavender)'
+vimcmd_visual_symbol = '[󰽥](bold fg:yellow)'
 
 [cmd_duration]
 show_milliseconds = true
