@@ -52,5 +52,6 @@ export WORK_PATH="/home/cubos/Documents/Uisr/"
 alias tmc='$MOOC_PATH/tmc-cli-rust-x86_64-unknown-linux-gnu-v1.1.2'
 export TMC_LANGS_CONFIG_DIR='/home/cubos/tmc-config'
 echo -ne "\e[6 q"
+export UV_PYTHON=3.14
 #source /home/cubos/.local/share/tmc-autocomplete/tmc.bash
 eval "$(starship init bash)"
